@@ -58,7 +58,7 @@ module RGeo
       class PointXYZ  # :nodoc:
 
         def initialize(x_, y_, z_)
-          r_ = ::Math.sqrt(x_ * x_ + y_ * y_ + z_ * z_)
+          r_ = ::Math.sqrt(x_ * x_ + y_ * y_ + z_ * z_).to_f
           @x = x_ / r_
           @y = y_ / r_
           @z = z_ / r_
